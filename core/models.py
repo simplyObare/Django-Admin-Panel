@@ -17,13 +17,13 @@ class Course(models.Model):
     status = models.CharField(
         max_length=15,
         choices=COURSE_STATUS,
-        default="draft",
+        default="published",
         help_text="Enter field documentation",
     )
 
+    def __str__(self):
+        return self.title
 
-#  def __str__(self):
-#      return self.title
 
 #  @property
 #  def lessons(self):

@@ -7,8 +7,14 @@ admin.site.site_title = "Custom Admin"
 
 
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ("title", "publish_date", "price", "full_name")
-    list_display_links = ("publish_date", "price")
+    list_display = ("title", "publish_date", "price", "status", "author", "full_name")
+    list_display_links = ("title",)
+    list_editable = ("price", "status", "author")
+    list_filter = ("title", "publish_date", "status")
+    search_fields = ("title",)
+    list_per_page = 3
+
+    # ordering = ("title",)
     # exclude = ("title", "price")
     # fields = (("title", "price"), "publish_date", "status", "author")
     # fieldsets = (
@@ -27,6 +33,11 @@ class CourseAdmin(admin.ModelAdmin):
     #          },
     #      ),
     #  )
+    def get_ordering(self, request):
+        if request.user.is_superuser:
+            return ("title",)
+        else:
+            return ("price",)
 
     @admin.display(description="New Name")
     def full_name(self, obj):
@@ -37,7 +48,11 @@ class CourseAdmin(admin.ModelAdmin):
 
 @admin.register(Lesson)
 class LessonAdmin(admin.ModelAdmin):
-    pass
+    list_display = ("title", "course")
+    list_filter = ("course__status",)
+    search_fields = ("course__price__gte",)
+    # autocomplete_fields = ("course",)
+    raw_id_fields = ("course",)
 
 
 # Register your models here.

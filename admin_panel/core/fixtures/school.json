@@ -1,0 +1,319 @@
+[
+  {
+    "model": "core.person",
+    "pk": 1,
+    "fields": {
+      "last_name": "Doe",
+      "first_name": "John",
+      "course": [1, 2]
+    }
+  },
+  {
+    "model": "core.person",
+    "pk": 2,
+    "fields": {
+      "last_name": "Smith",
+      "first_name": "Jane",
+      "course": [3, 4]
+    }
+  },
+  {
+    "model": "core.person",
+    "pk": 3,
+    "fields": {
+      "last_name": "Brown",
+      "first_name": "Charlie",
+      "course": [5, 6]
+    }
+  },
+
+  {
+    "model": "core.person",
+    "pk": 4,
+    "fields": {
+      "last_name": "Miller",
+      "first_name": "Alice",
+      "course": [7, 8]
+    }
+  },
+
+  {
+    "model": "core.person",
+    "pk": 5,
+    "fields": {
+      "last_name": "Taylor",
+      "first_name": "Emily",
+      "course": [9, 10]
+    }
+  },
+
+  {
+    "model": "core.person",
+    "pk": 6,
+    "fields": {
+      "last_name": "Anderson",
+      "first_name": "Michael",
+      "course": [1, 6]
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 1,
+    "fields": {
+      "name": "Mathematics",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 2,
+    "fields": {
+      "name": "Physics",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 3,
+    "fields": {
+      "name": "Chemistry",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 4,
+    "fields": {
+      "name": "Biology",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 5,
+    "fields": {
+      "name": "History",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 6,
+    "fields": {
+      "name": "Geography",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 7,
+    "fields": {
+      "name": "English",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 8,
+    "fields": {
+      "name": "French",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 9,
+    "fields": {
+      "name": "Spanish",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 10,
+    "fields": {
+      "name": "Computer Science",
+      "year": 2023
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 1,
+    "fields": {
+      "person": 1,
+      "course": 1,
+      "grade": 85
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 2,
+    "fields": {
+      "person": 1,
+      "course": 2,
+      "grade": 90
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 3,
+    "fields": {
+      "person": 2,
+      "course": 3,
+      "grade": 78
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 4,
+    "fields": {
+      "person": 2,
+      "course": 4,
+      "grade": 82
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 5,
+    "fields": {
+      "person": 3,
+      "course": 5,
+      "grade": 88
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 6,
+    "fields": {
+      "person": 3,
+      "course": 6,
+      "grade": 92
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 7,
+    "fields": {
+      "person": 4,
+      "course": 7,
+      "grade": 75
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 8,
+    "fields": {
+      "person": 4,
+      "course": 8,
+      "grade": 80
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 9,
+    "fields": {
+      "person": 5,
+      "course": 9,
+      "grade": 84
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 10,
+    "fields": {
+      "person": 5,
+      "course": 10,
+      "grade": 87
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 11,
+    "fields": {
+      "person": 6,
+      "course": 1,
+      "grade": 93
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 12,
+    "fields": {
+      "person": 6,
+      "course": 2,
+      "grade": 89
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 13,
+    "fields": {
+      "person": 6,
+      "course": 3,
+      "grade": 91
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 14,
+    "fields": {
+      "person": 5,
+      "course": 10,
+      "grade": 85
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 15,
+    "fields": {
+      "person": 4,
+      "course": 5,
+      "grade": 94
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 16,
+    "fields": {
+      "person": 3,
+      "course": 6,
+      "grade": 90
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 17,
+    "fields": {
+      "person": 2,
+      "course": 7,
+      "grade": 82
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 18,
+    "fields": {
+      "person": 1,
+      "course": 8,
+      "grade": 87
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 19,
+    "fields": {
+      "person": 2,
+      "course": 9,
+      "grade": 86
+    }
+  },
+  {
+    "model": "core.grade",
+    "pk": 20,
+    "fields": {
+      "person": 3,
+      "course": 10,
+      "grade": 92
+    }
+  }
+]

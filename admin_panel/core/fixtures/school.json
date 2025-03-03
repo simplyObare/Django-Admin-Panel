@@ -5,7 +5,7 @@
     "fields": {
       "last_name": "Doe",
       "first_name": "John",
-      "course": [1, 2]
+      "course": [1, 2, 5, 7, 9]
     }
   },
   {
@@ -14,7 +14,7 @@
     "fields": {
       "last_name": "Smith",
       "first_name": "Jane",
-      "course": [3, 4]
+      "course": [3, 4, 8, 1, 4]
     }
   },
   {
@@ -23,7 +23,7 @@
     "fields": {
       "last_name": "Brown",
       "first_name": "Charlie",
-      "course": [5, 6]
+      "course": [5, 6, 1, 10]
     }
   },
 
@@ -33,7 +33,7 @@
     "fields": {
       "last_name": "Miller",
       "first_name": "Alice",
-      "course": [7, 8]
+      "course": [7, 8, 3, 9]
     }
   },
 
@@ -43,7 +43,7 @@
     "fields": {
       "last_name": "Taylor",
       "first_name": "Emily",
-      "course": [9, 10]
+      "course": [9, 10, 4]
     }
   },
 
@@ -53,7 +53,7 @@
     "fields": {
       "last_name": "Anderson",
       "first_name": "Michael",
-      "course": [1, 6]
+      "course": [1, 6, 4, 5, 2, 7]
     }
   },
   {

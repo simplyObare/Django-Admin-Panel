@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.html import mark_safe
 
 
 # Create your models here.
@@ -35,3 +36,23 @@ class Lesson(models.Model):
     course = models.ForeignKey(Course, on_delete=models.SET_NULL, null=True)
     position = models.IntegerField()
     video_urls = models.CharField(max_length=1000)
+
+
+class Hotel(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to="images/", null=True, blank=True)
+
+    def image_preview(self):
+        return mark_safe(f'<img src="{self.image.url}" alt="" width="150" />')
+
+    image_preview.short_description = "Image"
+
+    def admin_image_preview(self):
+        return mark_safe(
+            f'<img src="{self.image.url}" alt="" width="95" height="100" style="border-radius: 50%; border: 1px solid #242424" />'
+        )
+
+    admin_image_preview.short_description = "Image"
+
+    def __str__(self):
+        return self.name

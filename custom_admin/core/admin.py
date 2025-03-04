@@ -58,3 +58,9 @@ class LessonAdmin(admin.ModelAdmin):
 # Register your models here.
 admin.site.register(Course, CourseAdmin)
 # admin.site.register(Lesson)
+
+
+@admin.register(Hotel)
+class HotelAdmin(admin.ModelAdmin):
+    list_display = ("name", "admin_image_preview")
+    readonly_fields = ("image_preview",)
